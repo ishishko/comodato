@@ -17,7 +17,8 @@ Aplicacion para el manejo de comodato de pacientes a traves de empresas.
     'depends': ['base','sale'],
 
     'data': [],
-    'application': True,
+    'installable': True,
+    # 'application': True,
     # 'pre_init_hook': '_pre_init_rental',
     # 'assets': {
     #     'web.assets_backend': [
