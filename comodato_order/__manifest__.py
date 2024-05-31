@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Comodato",
-
     'summary': "Manejo de contratos de comodato, entrega y devolucion",
-
     'description': """
 Aplicacion para el manejo de comodato de pacientes a traves de empresas.
     """,
-
-    'website': "https://www.odoo.com/app/rental",
+    'autor': 'Ignacio Shishko',
+    'website': "https://www.hitofusion.com/",
 
     'category': 'Sales/Sales',
     'sequence': 160,
-    'version': '1.0',
+    'version': '17.0.0.0.0',
 
     'depends': ['base','sale'],
 
-    'data': [],
+    'data': [
+        'views/res_partnet_patient.xml'
+    ],
     'installable': True,
     # 'application': True,
     # 'pre_init_hook': '_pre_init_rental',
@@ -25,5 +25,5 @@ Aplicacion para el manejo de comodato de pacientes a traves de empresas.
     #         'sale_renting/static/src/**/*',
     #     ],
     # },
-    # 'license': 'GPL-3',
+    'license': 'GPL-3',
 }

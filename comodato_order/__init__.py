@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from . import models
-from . import report
+# from . import report
 # from odoo.tools.sql import column_exists
 
 # def _pre_init_rental(env):

@@ -1,1 +1,1 @@
-from . import comodato_order
+from . import res_partner_comodato
