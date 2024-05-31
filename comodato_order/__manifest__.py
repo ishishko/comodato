@@ -16,6 +16,8 @@ Aplicacion para el manejo de comodato de pacientes a traves de empresas.
 
     'data': [
         'views/res_partnet_patient.xml'
+        'views/product_template_view.xml'
+        'views/product_view copy.xml'
     ],
     'installable': True,
     # 'application': True,
