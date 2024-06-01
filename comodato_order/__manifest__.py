@@ -4,6 +4,7 @@
     'summary': "Manejo de contratos de comodato, entrega y devolucion",
     'description': """
 Aplicacion para el manejo de comodato de pacientes a traves de empresas.
+Se agrega el campo patient_check a la vista de res.partner.
     """,
     'autor': 'Ignacio Shishko',
     'website': "https://www.hitofusion.com/",
