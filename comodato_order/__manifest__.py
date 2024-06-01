@@ -19,7 +19,7 @@ Aplicacion para el manejo de comodato de pacientes a traves de empresas.
         'views/product_template_view.xml'
         'views/product_view copy.xml'
         'views/sale_order.xml'
-        'views/sale_comodato_menus.xml'
+        # 'views/sale_comodato_menus.xml'
         'views/sale_rental_menus.xml'
     ],
     'installable': True,
