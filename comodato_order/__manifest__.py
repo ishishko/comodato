@@ -15,12 +15,12 @@ Aplicacion para el manejo de comodato de pacientes a traves de empresas.
     'depends': ['base','sale'],
 
     'data': [
-        'views/res_partnet_patient.xml'
-        'views/product_template_view.xml'
-        'views/product_view.xml'
-        'views/sale_order.xml'
-        'views/sale_comodato_menus.xml'
-        'views/sale_rental_menus.xml'
+        'views/res_partnet_patient.xml',
+        'views/product_template_view.xml',
+        'views/product_view.xml',
+        'views/sale_order.xml',
+        'views/sale_comodato_menus.xml',
+        'views/sale_rental_menus.xml',
     ],
     'installable': True,
     # 'application': True,
