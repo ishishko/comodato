@@ -1,7 +1,7 @@
 from odoo import api, fields, models
 
 class SaleOrder (models.Model):
-    _inherit='rental.order'
+    _inherit='sale.order'
     
 
     patient_id = fields.Many2one('res.partner', string='Paciente', default= False,
