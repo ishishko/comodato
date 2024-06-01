@@ -22,7 +22,7 @@
                 action="account.res_partner_action_customer"
                 sequence="2"/>
 
-            <menuitem id="comodato_orders_today"
+            <!-- <menuitem id="comodato_orders_today"
                 name="To Do Today"
                 sequence="3">
 
@@ -36,10 +36,10 @@
                     action="comodato_order_today_return_action"
                     sequence="2"/>
 
-            </menuitem>
+            </menuitem> -->
         </menuitem>
 
-        <menuitem id="menu_comodato_schedule"
+        <!-- <menuitem id="menu_comodato_schedule"
             name="Schedule"
             action="action_comodato_order_schedule"
             sequence="3"/>
@@ -70,6 +70,6 @@
                 action="sale_temporal_recurrence_action"
                 sequence="20"/>
 
-        </menuitem>
+        </menuitem> -->
     </menuitem>
 </odoo>

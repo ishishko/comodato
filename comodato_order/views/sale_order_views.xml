@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <record id="comodato_order_form_view" model="ir.ui.view">
+    <!-- <record id="comodato_order_form_view" model="ir.ui.view">
         <field name="name">rental.order.form</field>
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
@@ -377,6 +377,6 @@
         <field name="view_mode">form</field>
         <field name="view_id" ref="rental_order_primary_form_view"/>
         <field name="act_window_id" ref="rental_order_today_return_action"/>
-    </record>
+    </record> -->
 
 </odoo>
