@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-    <menuitem
+    <!-- <menuitem
         id="comodato_menu_root"
         name="Comodato"
         web_icon="comodato,static/description/icon.png"
@@ -39,7 +39,7 @@
             </menuitem> -->
         </menuitem>
 
-        <!-- <menuitem id="menu_comodato_schedule"
+        <menuitem id="menu_comodato_schedule"
             name="Schedule"
             action="action_comodato_order_schedule"
             sequence="3"/>
@@ -70,6 +70,7 @@
                 action="sale_temporal_recurrence_action"
                 sequence="20"/>
 
-        </menuitem> -->
-    </menuitem>
+        </menuitem>
+    </menuitem> -->
+
 </odoo>
