@@ -19,7 +19,7 @@ Se agrega el campo patient_check a la vista de res.partner.
         'views/res_partner_patient.xml',
         # 'views/product_template_view.xml',
         # 'views/product_view.xml',
-        'views/sale_order.xml',
+        'views/sale_order_view.xml',
         # 'views/sale_comodato_menus.xml',
         # 'views/sale_rental_menus.xml'
     ],
