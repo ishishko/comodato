@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
+    <data>
     <menuitem
         id="comodato_menu_root"
         name="Comodato"
@@ -8,12 +8,14 @@
 
         <menuitem id="comodato_order_menu"
             name="Orders"
-            sequence="2">
+            sequence="2"
+            parent="comodato_menu_root">
 
             <menuitem id="comodato_orders_all"
                 name="Orders"
                 action="comodato_order_action"
-                sequence="1"/>
+                sequence="1"
+                parent="comodato_order_menu"/>
 
             <!-- <menuitem id="menu_orders_customers"
                 name="Customers"
@@ -70,6 +72,6 @@
 
         </menuitem> -->
     </menuitem>
- 
+    </data>
 
 </odoo>
