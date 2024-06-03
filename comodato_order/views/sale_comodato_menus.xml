@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
     <menuitem
         id="comodato_menu_root"
         name="Comodato"
@@ -72,6 +71,5 @@
 
         </menuitem> -->
     </menuitem>
-    </data>
 
 </odoo>
