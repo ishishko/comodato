@@ -24,7 +24,7 @@ Se agrega el campo patient_check a la vista de res.partner.
         # 'views/sale_rental_menus.xml'
     ],
     'installable': True,
-    # 'application': True,
+    'application': True,
     # 'pre_init_hook': '_pre_init_rental',
     # 'assets': {
     #     'web.assets_backend': [
