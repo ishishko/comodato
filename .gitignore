@@ -1,0 +1,2 @@
+# necesito ignorar todos los archivos js dentro de comodato, ya que no son necesarios en cualquier directorio
+comodato/static/src/js/*
