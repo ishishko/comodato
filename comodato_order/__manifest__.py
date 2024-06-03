@@ -16,7 +16,7 @@ Se agrega el campo patient_check a la vista de res.partner.
     'depends': ['base','sale'],
 
     'data': [
-        'views/res_partner_patient.xml'
+        'views/res_partner_patient.xml',
         # 'views/product_template_view.xml',
         # 'views/product_view.xml',
         'views/sale_order.xml',
