@@ -5,13 +5,14 @@
         id="comodato_menu_root"
         name="Comodato"
         web_icon="comodato,static/description/icon.png"
+        groups="sales_team.group_sale_salesman"
         sequence="45">
 
-        <menuitem id="comodato_order_menu"
+        <!-- <menuitem id="comodato_order_menu"
             name="Orders"
             sequence="2">
 
-            <!-- <menuitem id="comodato_orders_all"
+            <menuitem id="comodato_orders_all"
                 name="Orders"
                 action="comodato_order_action"
                 sequence="1"/>
@@ -19,9 +20,9 @@
             <menuitem id="menu_orders_customers"
                 name="Customers"
                 action="account.res_partner_action_customer"
-                sequence="2"/> -->
+                sequence="2"/>
 
-            <!-- <menuitem id="comodato_orders_today"
+            <menuitem id="comodato_orders_today"
                 name="To Do Today"
                 sequence="3">
 
@@ -35,8 +36,8 @@
                     action="comodato_order_today_return_action"
                     sequence="2"/>
 
-            </menuitem> -->
-        </menuitem>
+            </menuitem>
+        </menuitem> -->
 
         <!-- <menuitem id="menu_comodato_schedule"
             name="Schedule"
