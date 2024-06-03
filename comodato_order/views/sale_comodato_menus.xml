@@ -12,7 +12,7 @@
             name="Orders"
             sequence="2">
 
-            <menuitem id="comodato_orders_all"
+            <!-- <menuitem id="comodato_orders_all"
                 name="Orders"
                 action="comodato_order_action"
                 sequence="1"/>
@@ -20,7 +20,7 @@
             <menuitem id="menu_orders_customers"
                 name="Customers"
                 action="account.res_partner_action_customer"
-                sequence="2"/>
+                sequence="2"/> -->
 
             <!-- <menuitem id="comodato_orders_today"
                 name="To Do Today"
