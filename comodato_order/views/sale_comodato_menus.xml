@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <data>
+        <record id="comodato_menu_root" model="ir.ui.menu">
+            <field name="name">Comodato</field>
+            <field name="sequence">46</field>
+        </record>
+
+        <record id="comodato_order_menu" model="ir.ui.menu">
+            <field name="name">Orders</field>
+            <field name="sequence">2</field>
+            <field name="parent_id" ref="comodato_menu_root"/>
+        </record>
+    </data>
+</odoo>
+<!-- <odoo>
     <menuitem
         id="comodato_menu_root"
         name="Comodato"
@@ -16,7 +30,7 @@
                 sequence="1"
                 parent="comodato_order_menu"/>
 
-            <!-- <menuitem id="menu_orders_customers"
+            <menuitem id="menu_orders_customers"
                 name="Customers"
                 action="account.res_partner_action_customer"
                 sequence="2"/>
@@ -35,10 +49,10 @@
                     action="comodato_order_today_return_action"
                     sequence="2"/>
 
-            </menuitem> -->
+            </menuitem>
         </menuitem>
 
-        <!-- <menuitem id="menu_comodato_schedule"
+        <menuitem id="menu_comodato_schedule"
             name="Schedule"
             action="action_comodato_order_schedule"
             sequence="3"/>
@@ -69,7 +83,7 @@
                 action="sale_temporal_recurrence_action"
                 sequence="20"/>
 
-        </menuitem> -->
+        </menuitem>
     </menuitem>
 
-</odoo>
+</odoo> -->
