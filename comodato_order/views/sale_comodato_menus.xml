@@ -16,7 +16,8 @@
                 action="comodato_order_action"
                 sequence="1"/>
 
-            <!-- <menuitem id="menu_orders_customers"
+
+            <menuitem id="menu_orders_customers"
                 name="Customers"
                 action="account.res_partner_action_customer"
                 sequence="2"/>
@@ -35,7 +36,7 @@
                     action="comodato_order_today_return_action"
                     sequence="2"/>
 
-            </menuitem> -->
+            </menuitem>
         </menuitem>
 
         <!-- <menuitem id="menu_comodato_schedule"
