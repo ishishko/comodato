@@ -16,4 +16,44 @@
             </p>
         </field>
     </record>
+
+    <record id="comodato_order_today_pickup_action" model="ir.actions.act_window">
+        <field name="name">Rental Orders</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <!-- <field name="search_view_id" ref="comodato_order_view_search_without_searchpanel"/>
+        <field name="context">{'in_rental_app': 1, 'search_default_filter_today': 1, 'search_default_filter_to_pickup': 1, 'in_comodato_app':1}</field>
+        <field name="domain">[('is_rental_order', '=', True),('patient', '!=', 'none')]</field> -->
+        
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                There isn't any scheduled pickup or return.
+            </p>
+            <p>
+                You can search on a larger period using the filters here above
+                <br/>
+                or create a new rental order.
+            </p>
+        </field>
+    </record>
+
+    <record id="comodato_order_today_return_action" model="ir.actions.act_window">
+        <field name="name">Rental Orders</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+        <!-- <field name="search_view_id" ref="rental_order_view_search_without_searchpanel"/>
+        <field name="context">{'in_rental_app': 1, 'search_default_filter_today': 1, 'search_default_filter_to_return': 1}</field>
+        <field name="domain">[('is_rental_order', '=', True)]</field> -->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                There isn't any scheduled pickup or return.
+            </p>
+            <p>
+                You can search on a larger period using the filters here above
+                <br/>
+                or create a new rental order.
+            </p>
+        </field>
+    </record>
+    
 </odoo>
