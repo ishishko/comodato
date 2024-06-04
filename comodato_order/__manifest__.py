@@ -17,6 +17,10 @@ Se agrega el campo patient_check a la vista de res.partner.
         "views/sale_order_view.xml",
         "views/sale_order_views.xml",
         "views/sale_comodato_menus.xml",
+
+        'report/rental_order_report_templates.xml',
+        'report/rental_report_views.xml',
+        'report/rental_schedule_views.xml',
     ],
     "installable": True,
     "application": True,
