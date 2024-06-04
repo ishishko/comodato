@@ -4,6 +4,7 @@
     <menuitem
         id="comodato_menu_root"
         name="Comodato"
+        web_icon="sale_renting,static/description/icon.png"
         sequence="46">
 
         <menuitem id="comodato_order_menu"
