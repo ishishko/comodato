@@ -62,14 +62,14 @@
                 groups="sales_team.group_sale_manager"
                 sequence="10">
 
-                <menuitem id="menu_comodato_settings"
+                <!-- <menuitem id="menu_comodato_settings"
                     name="Settings"
                     action="action_rental_config_settings"
-                    groups="base.group_system"/>
+                    groups="base.group_system"/> -->
 
                 <menuitem id="menu_sale_renting_periods"
                     name="Rental periods"
-                    action="sale_temporal_recurrence_action"
+                    action="comodato_sale_temporal_recurrence_action"
                     sequence="20"/>
 
             </menuitem>
