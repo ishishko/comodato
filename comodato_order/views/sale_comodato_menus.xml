@@ -41,17 +41,17 @@
 
         <menuitem id="menu_comodato_schedule"
             name="Schedule"
-
+            action=""
             sequence="3"/>
 
         <menuitem id="menu_comodato_products"
             name="Products"
-
+            action=""
             sequence="4"/>
 
         <menuitem id="menu_comodato_reporting"
             name="Reporting"
-
+            action=""
             groups="sales_team.group_sale_manager"
             sequence="5"/>
 
@@ -62,12 +62,12 @@
 
             <menuitem id="menu_comodato_settings"
                 name="Settings"
-
+                action=""
                 groups="base.group_system"/>
 
             <menuitem id="menu_sale_renting_periods"
                 name="Rental periods"
-
+                action=""
                 sequence="20"/>
 
         </menuitem>
