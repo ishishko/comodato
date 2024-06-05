@@ -4,4 +4,4 @@ class ProductTemplate (models.Model):
     _inherit='product.template'
     
 
-    # description_comodato = fields.Char( string='Descripcion comodato:', size=255, default= False )
+    description_comodato = fields.Char( string='Descripcion comodato:' )
