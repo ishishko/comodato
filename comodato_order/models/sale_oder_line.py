@@ -3,7 +3,6 @@ from odoo import api, fields, models
 class SaleOrderLine (models.Model):
     _inherit='sale.order.line'
     
-
     comodato_check = fields.Boolean(string='Comodato', related='order_id.comodato_check')
 
     @api.depends('product_id')
@@ -12,5 +11,5 @@ class SaleOrderLine (models.Model):
 
         for line in self:
             if line.comodato_check:
-                line.name = line.product_id.comodato_description
+                line.name = line.product_id.descripcion_comodato
                 continue
