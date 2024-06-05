@@ -11,5 +11,5 @@ class SaleOrderLine (models.Model):
 
         for line in self:
             if line.comodato_check:
-                line.name = line.product_id.descripcion_comodato
+                line.name = line.product_id.description_comodato
                 continue
