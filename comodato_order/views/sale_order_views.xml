@@ -7,6 +7,7 @@
         <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
         <!-- <field name="search_view_id" ref="comodato_order_view_search"/> -->
         <field name="context">{'in_rental_app': 1, 'search_default_from_rental': 1, 'in_comodato_app':1 , 'default_comodato_check':True }</field>
+        <field name="domain">[('comodato_check', '=', True)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Create a new quotation, the first step of a new rental!
@@ -24,7 +25,7 @@
         <field name="context">{'in_rental_app': 1, 'search_default_filter_today': 1, 'search_default_filter_to_pickup': 1, 'in_comodato_app':1, 'default_comodato_check':True}</field>
         <!-- <field name="search_view_id" ref="comodato_order_view_search_without_searchpanel"/>
         <field name="domain">[('is_rental_order', '=', True),('patient', '!=', 'none')]</field> -->
-        
+        <field name="domain">[('comodato_check', '=', True)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 There isn't any scheduled pickup or return.
@@ -44,6 +45,7 @@
         <field name="context">{'in_rental_app': 1, 'search_default_filter_today': 1, 'search_default_filter_to_return': 1, 'default_comodato_check':True}</field>
         <!-- <field name="search_view_id" ref="rental_order_view_search_without_searchpanel"/>
         <field name="domain">[('is_rental_order', '=', True)]</field> -->
+        <field name="domain">[('comodato_check', '=', True)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 There isn't any scheduled pickup or return.
