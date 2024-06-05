@@ -5,6 +5,8 @@ class SaleOrderLine (models.Model):
     
     comodato_check = fields.Boolean(string='Comodato', related='order_id.comodato_check')
 
+    product_id = fields.Many2one("product'rpduct", domain=[("sale_ok", "=", True), ("description_comodato", "=", True)])
+
     @api.depends('product_id')
     def _compute_name(self):
         super()._compute_name()
