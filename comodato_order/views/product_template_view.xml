@@ -28,5 +28,6 @@
                     <field name="description_comodato"/>
                 </xpath>
             </field>
+        </record>
     </data>
 </odoo>
