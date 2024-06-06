@@ -60,7 +60,7 @@
 
     <record id="account.res_partner_action_customer" model="ir.actions.act_window">
         <field name="context">{'in_rental_app': 1, 'search_default_filter_customer': 1, 'default_comodato_check':True}</field>
-        <field name="domain">[('comodato_check', '=', True)]</field>
+        <field name="domain">[('partner_id.comodato_check', '=', True)]</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 There isn't any customer yet.
