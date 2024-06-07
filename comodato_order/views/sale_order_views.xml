@@ -94,12 +94,13 @@
          <field name="inherit_id" ref="sale_renting.rental_order_view_search">
         <field name="model">sale.order</field>
         <field name="priority">100</field>
-        <field name="arch" type="xml"/>
+        <field name="arch" type="xml">
             <xpath expr="//filter[@name='from_rental']" position="attribute">
                 <attribute name="domain">
                     [('is_rental_order', '=', True),('comodato_check','!=','True')]
                 </attribute>
             </xpath>
+        </field>
     </record>
     
 </odoo>
