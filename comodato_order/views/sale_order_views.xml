@@ -91,7 +91,7 @@
 
     <record id="rental_order_view_search_custom" model="ir.ui.view">
     <field name="name">rental.order.search.custom</field>
-         <field name="inherit_id" ref="sale_renting.rental_order_view_search">
+        <field name="inherit_id" ref="sale_renting.rental_order_view_search"></field>
         <field name="model">sale.order</field>
         <field name="priority">100</field>
         <field name="arch" type="xml">
