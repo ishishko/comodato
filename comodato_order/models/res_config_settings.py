@@ -7,25 +7,7 @@ from odoo import api, fields, models
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    # # RENTAL company defaults :
-
-    # # Extra Costs
-
-    # extra_hour = fields.Float(
-    #     "Per Hour", related="company_id.extra_hour", readonly=False,
-    #     help="This is the default extra cost per hour set on newly created products. You can change this value for existing products directly on the product itself.")
-    # extra_day = fields.Float(
-    #     "Per Day", related="company_id.extra_day", readonly=False,
-    #     help="This is the default extra cost per day set on newly created products. You can change this value for existing products directly on the product itself.")
-    # # extra_week = fields.Monetary("Extra Week")
-    # min_extra_hour = fields.Integer("Minimum delay time before applying fines.", related="company_id.min_extra_hour", readonly=False)
-    # # week uom disabled in rental for the moment
-    # extra_product = fields.Many2one(
-    #     'product.product', string="Delay Product",
-    #     help="This product will be used to add fines in the Rental Order.", related="company_id.extra_product",
-    #     readonly=False, domain="[('type', '=', 'service')]")
-
-    is_comodato = fields.Boolean(string="Documento Predeterminado")
+    is_comodato_sign = fields.Boolean(string="Documento Predeterminado")
 
     @api.onchange('extra_hour')
     def _onchange_extra_hour(self):
@@ -34,3 +16,14 @@ class ResConfigSettings(models.TransientModel):
     @api.onchange('extra_day')
     def _onchange_extra_day(self):
         self.env['ir.property']._set_default("extra_daily", "product.template", self.extra_day)
+
+class ResConfigSettings(models.TransientModel):
+    _inherit = "res.config.settings"
+
+    comodato_sign_tmpl_id = fields.Many2one(
+        "sign.template",
+        related="company_id.comodato_sign_tmpl_id",
+        string="Seleccione documento",
+        help="Set a default document template for all rentals in the current company",
+        readonly=False,
+    )

@@ -15,7 +15,20 @@
                      groups="sales_team.group_sale_manager">
                     <block title="Comodato">
                         <setting id="comodato_sign" help="Podra seleccionar un documento predeterminado diferente al de alquiler.">
-                            <field name="is_comodato"/>
+                            <field name="is_comodato_sign"/>
+                            <div class="content-group" >
+                                <div class="row mt16">
+                                    <label for="comodato_sign_tmpl_id" class="col-lg-6 o_light_label"/>
+                                    <field name="comodato_sign_tmpl_id"
+                                        options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"
+                                        context="{'kanban_view_ref': 'sign.sign_template_view_kanban_mobile'}"/>
+                                </div>
+                                <button name="%(sign.sign_template_action)d"
+                                    string="Subir Plantilla"
+                                    type="action"
+                                    class="btn-primary"
+                                    context="{'default_privacy': 'employee'}" />
+                            </div>
                         </setting>
                     </block>
                 </app>
