@@ -13,6 +13,7 @@ Se agrega el campo patient_check a la vista de res.partner.
     "version": "17.0.0.0.0",
     "depends": [ "sale_renting" ],
     "data": [
+        "views/res_config_settings_views.xml",
         "views/sale_temporal_recurrence_views.xml",
         "views/product_template_view.xml",
         "views/res_partner_patient.xml",
