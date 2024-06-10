@@ -72,25 +72,9 @@
             </p>
         </field>
     </record>
-    
-    <!-- <record id="acount.res_partner_action_customer" model="ir.actions.act_window">
-        <field name="context">{'in_rental_app': 1, 'search_default_filter_customer': 1, 'default_comodato_check':True}</field>
-        <field name="domain">[('patient_check', '=', False)]</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                There isn't any customer yet.
-            </p>
-            <p>
-                You can search on a larger period using the filters here above
-                <br/>
-                or create a new customer.
-            </p>
-        </field>
-    </record> -->
-
 
     <record id="rental_order_view_search_custom" model="ir.ui.view">
-    <field name="name">rental.order.search.custom</field>
+        <field name="name">rental.order.search.custom</field>
         <field name="inherit_id" ref="sale_renting.rental_order_view_search"></field>
         <field name="model">sale.order</field>
         <field name="priority">100</field>

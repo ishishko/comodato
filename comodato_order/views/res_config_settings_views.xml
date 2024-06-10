@@ -2,7 +2,7 @@
 <odoo>
 
     <record id="res_config_settings_view_form" model="ir.ui.view">
-        <field name="name">res.config.settings.view.form.inherit.rental</field>
+        <field name="name">res.config.settings.view.form.inherit.comodato</field>
         <field name="model">res.config.settings</field>
         <field name="priority" eval="10"/>
         <field name="inherit_id" ref="base.res_config_settings_view_form"/>
@@ -44,7 +44,7 @@
         </field>
     </record>
 
-    <record id="action_rental_config_settings" model="ir.actions.act_window">
+    <record id="action_comodato_config_settings" model="ir.actions.act_window">
         <field name="name">Settings</field>
         <field name="res_model">res.config.settings</field>
         <field name="view_id" ref="res_config_settings_view_form"/>

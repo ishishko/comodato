@@ -64,7 +64,7 @@
 
                 <menuitem id="menu_comodato_settings"
                     name="Ajustes"
-                    action="sale_renting.action_rental_config_settings"
+                    action="sale_renting.action_comodato_config_settings"
                     groups="base.group_system"/>
 
                 <menuitem id="menu_sale_renting_periods"
