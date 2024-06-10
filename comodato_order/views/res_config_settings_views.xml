@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <xpath expr="//form" position="inside">
                 <app
-                     data-string="Comodato"
+                     data-string="Rental"
                      string="Comodato"
                      name="Comodato"
                      groups="sales_team.group_sale_manager">
