@@ -50,7 +50,7 @@
         <field name="view_id" ref="res_config_settings_view_form_comodato"/>
         <field name="view_mode">form</field>
         <field name="target">inline</field>
-        <field name="context">{'module' : 'comodato_order', 'bin_size': False}</field>
+        <field name="context">{'module' : 'sale_renting', 'bin_size': False}</field>
     </record>
 
 </odoo>
