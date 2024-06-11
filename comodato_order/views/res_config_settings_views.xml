@@ -21,7 +21,8 @@
                                     <label for="comodato_sign_tmpl_id" class="col-lg-6 o_light_label"/>
                                     <field name="comodato_sign_tmpl_id"
                                         options="{'no_create_edit': True, 'no_create': True, 'no_open': True}"
-                                        context="{'kanban_view_ref': 'sign.sign_template_view_kanban_mobile'}"/>
+                                        context="{'kanban_view_ref': 'sign.sign_template_view_kanban_mobile'}"
+                                        required="True"/>
                                 </div>
                                 <button name="%(sign.sign_template_action)d"
                                     string="Subir Plantilla"
