@@ -16,7 +16,7 @@
                     <block title="Comodato">
                         <setting id="comodato_sign" help="Podra seleccionar un documento predeterminado diferente al de alquiler.">
                             <field name="is_comodato_sign"/>
-                            <div class="content-group" >
+                            <div class="content-group" invisible="not is_comodato_sign">
                                 <div class="row mt16">
                                     <label for="comodato_sign_tmpl_id" class="col-lg-6 o_light_label"/>
                                     <field name="comodato_sign_tmpl_id"
@@ -42,7 +42,7 @@
         <field name="view_id" ref="res_config_settings_view_form_comodato"/>
         <field name="view_mode">form</field>
         <field name="target">inline</field>
-        <field name="context">{'module' : 'sale_renting', 'bin_size': False}</field>
+        <field name="context">{'module' : 'sale_comodato', 'bin_size': False}</field>
     </record>
 
 </odoo>

@@ -7,18 +7,9 @@ from odoo import api, fields, models
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
 
-    is_comodato_sign = fields.Boolean(string="Documento Predeterminado")
-
-    @api.onchange('extra_hour')
-    def _onchange_extra_hour(self):
-        self.env['ir.property']._set_default("extra_hourly", "product.template", self.extra_hour)
-
-    @api.onchange('extra_day')
-    def _onchange_extra_day(self):
-        self.env['ir.property']._set_default("extra_daily", "product.template", self.extra_day)
-
-class ResConfigSettings(models.TransientModel):
-    _inherit = "res.config.settings"
+    is_comodato_sign = fields.Boolean(related="company_id.is_comodato_sign", 
+                                      string="Documento Predeterminado",
+                                     readonly=False)
 
     comodato_sign_tmpl_id = fields.Many2one(
         "sign.template",
